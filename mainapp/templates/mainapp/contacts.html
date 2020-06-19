@@ -1,0 +1,12 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% if site.contact_page %}
+            {% include site.contact_page %}
+    {% else %}
+        {% include 'mainapp/includes/standard_contact_page.html' %}
+    {% endif %}
+
+{% endblock content %}
